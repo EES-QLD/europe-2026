@@ -3,116 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Europe 2026</title>
+<title>Europe 2026 — Kulhavn × EES QLD</title>
 <style>
+/* ─── KULHAVN × EES QLD — EUROPE 2026 ─────────────────────────────── */
+:root{
+  --navy:#283147;
+  --charcoal:#45454c;
+  --silver:#9ca3af;
+  --smoke:#6b7280;
+  --frost:#e5e7eb;
+  --ice:#f3f4f6;
+  --white:#ffffff;
+  --accent:#8ba3c7;   /* soft steel blue — links & highlights */
+  --warn:#c0392b;     /* critical red */
+  --warn-bg:#fdf2f2;
+  --gold:#b8972a;     /* subtle warm accent */
+}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f7;color:#1c1c1e}
+html,body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--ice);color:var(--charcoal);-webkit-font-smoothing:antialiased}
 .hub{max-width:680px;margin:0 auto;padding-bottom:3rem}
-.hero{background:#fff;padding:1.1rem 1.25rem 0.9rem;border-bottom:1px solid #e5e5ea}
-.hero h1{font-size:20px;font-weight:700;color:#1c1c1e}
-.hero p{font-size:13px;color:#6e6e73;margin-top:3px}
-.depart{display:inline-block;margin-top:8px;background:#e8f0fe;color:#1a56db;font-size:12px;font-weight:600;padding:3px 11px;border-radius:20px}
+
+/* ─── HERO ─── */
+.hero{background:var(--navy);padding:1.4rem 1.4rem 1.1rem;border-bottom:3px solid var(--gold)}
+.hero-brand{font-size:10px;font-weight:700;color:var(--silver);text-transform:uppercase;letter-spacing:.18em;margin-bottom:6px}
+.hero h1{font-size:26px;font-weight:700;color:var(--white);letter-spacing:.02em;line-height:1.1}
+.hero h1 span{color:var(--silver);font-weight:400}
+.hero-sub{font-size:12px;color:var(--silver);margin-top:5px;letter-spacing:.05em}
+.depart{display:inline-flex;align-items:center;gap:5px;margin-top:10px;background:rgba(255,255,255,.1);color:var(--white);font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.2);letter-spacing:.04em}
+
+/* ─── TABS ─── */
 input.tab-radio{display:none}
-.tab-wrap{background:#fff;border-bottom:1px solid #e5e5ea;position:sticky;top:0;z-index:20}
+.tab-wrap{background:var(--navy);border-bottom:1px solid rgba(255,255,255,.1);position:sticky;top:0;z-index:20}
 .tab-bar{display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.tab-label{padding:12px 13px;font-size:13px;font-weight:500;color:#6e6e73;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;flex-shrink:0;display:block}
+.tab-label{padding:11px 14px;font-size:12px;font-weight:600;color:var(--silver);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;flex-shrink:0;display:block;letter-spacing:.05em;text-transform:uppercase;transition:color .15s}
 #t1:checked ~ .hub .tab-wrap label[for=t1],
 #t2:checked ~ .hub .tab-wrap label[for=t2],
 #t3:checked ~ .hub .tab-wrap label[for=t3],
 #t4:checked ~ .hub .tab-wrap label[for=t4],
 #t5:checked ~ .hub .tab-wrap label[for=t5],
-#t6:checked ~ .hub .tab-wrap label[for=t6]{color:#1c1c1e;border-bottom-color:#1c1c1e;font-weight:700}
-.panels .panel{display:none;padding:1rem 1.25rem}
+#t6:checked ~ .hub .tab-wrap label[for=t6]{color:var(--white);border-bottom-color:var(--gold)}
+.panels .panel{display:none;padding:1rem 1.1rem}
 #t1:checked ~ .hub .panels #p1,
 #t2:checked ~ .hub .panels #p2,
 #t3:checked ~ .hub .panels #p3,
 #t4:checked ~ .hub .panels #p4,
 #t5:checked ~ .hub .panels #p5,
 #t6:checked ~ .hub .panels #p6{display:block}
-.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:1rem}
-.stat{background:#fff;border:1px solid #e5e5ea;border-radius:12px;padding:12px;text-align:center}
-.stat-val{font-size:22px;font-weight:700;color:#1c1c1e}
-.stat-label{font-size:11px;color:#8e8e93;margin-top:2px}
-.rdiv{display:flex;align-items:center;gap:8px;margin:14px 0 6px}
-.rline{flex:1;height:1px;background:#e5e5ea}
-.rname{font-size:11px;font-weight:700;color:#8e8e93;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
-.day-card{background:#fff;border:1px solid #e5e5ea;border-radius:12px;margin-bottom:8px;overflow:hidden}
+
+/* ─── STAT GRID ─── */
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1rem}
+.stat{background:var(--navy);border-radius:10px;padding:14px 10px;text-align:center}
+.stat-val{font-size:22px;font-weight:700;color:var(--white)}
+.stat-label{font-size:10px;color:var(--silver);margin-top:3px;text-transform:uppercase;letter-spacing:.06em}
+
+/* ─── REGION DIVIDERS ─── */
+.rdiv{display:flex;align-items:center;gap:10px;margin:16px 0 8px}
+.rline{flex:1;height:1px;background:var(--frost)}
+.rname{font-size:10px;font-weight:700;color:var(--smoke);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
+
+/* ─── DAY CARDS ─── */
+.day-card{background:var(--white);border:1px solid var(--frost);border-radius:10px;margin-bottom:7px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}
 input.day-chk{display:none}
-.day-header{display:flex;align-items:center;gap:8px;padding:11px 14px;cursor:pointer;user-select:none}
-.day-header:active{background:#f5f5f7}
-.day-date{font-size:12px;font-weight:500;color:#8e8e93;min-width:52px;flex-shrink:0}
-.day-title{font-size:14px;font-weight:500;color:#1c1c1e;flex:1}
-.day-tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;flex-shrink:0}
-.tc{background:#fee2e2;color:#991b1b}
-.td{background:#dbeafe;color:#1e40af}
-.tf{background:#ede9fe;color:#5b21b6}
-.tb{background:#dcfce7;color:#166534}
-.chev{font-size:13px;color:#8e8e93;transition:transform .2s;flex-shrink:0}
+.day-header{display:flex;align-items:center;gap:8px;padding:11px 13px;cursor:pointer;user-select:none}
+.day-header:active{background:var(--ice)}
+.day-date{font-size:11px;font-weight:600;color:var(--smoke);min-width:48px;flex-shrink:0;letter-spacing:.02em}
+.day-title{font-size:13px;font-weight:500;color:var(--charcoal);flex:1;line-height:1.35}
+.day-tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;flex-shrink:0;letter-spacing:.04em;text-transform:uppercase}
+.tc{background:#fde8e8;color:#7f1d1d}
+.td{background:#e8edf5;color:var(--navy)}
+.tf{background:#ede9fe;color:#4c1d95}
+.tb{background:#e8f0e8;color:#1a4d1a}
+.chev{font-size:12px;color:var(--silver);transition:transform .2s;flex-shrink:0}
 .day-body{max-height:0;overflow:hidden;transition:max-height .3s ease}
 input.day-chk:checked ~ .day-header .chev{transform:rotate(180deg)}
-input.day-chk:checked ~ .day-body{max-height:800px}
-.day-inner{padding:0 14px 12px}
-.flight-banner{background:#f0f4ff;border-radius:8px;padding:8px 12px;margin-bottom:8px;margin-top:4px}
+input.day-chk:checked ~ .day-body{max-height:900px}
+.day-inner{padding:0 13px 12px}
+
+/* ─── FLIGHT BANNER ─── */
+.flight-banner{background:var(--navy);border-radius:7px;padding:9px 12px;margin-bottom:8px;margin-top:4px}
 .flight-banner .fb-row{display:flex;align-items:center;gap:8px;margin-bottom:4px}
 .flight-banner .fb-row:last-child{margin-bottom:0}
-.fb-label{font-size:11px;font-weight:600;color:#6e6e73;min-width:72px}
-.fb-val{font-size:13px;color:#1c1c1e;font-weight:500}
-.fb-ref{font-size:11px;color:#8e8e93;margin-left:auto}
-.di{font-size:13px;color:#48484a;padding:3px 0 3px 16px;position:relative;line-height:1.5}
-.di::before{content:"·";position:absolute;left:4px;color:#8e8e93}
-.di.al{color:#991b1b;font-weight:600}
-.di.al::before{content:"⚠";left:0;font-size:11px}
-.sh{font-size:11px;font-weight:700;color:#8e8e93;text-transform:uppercase;letter-spacing:.06em;margin:1.2rem 0 .5rem}
+.fb-label{font-size:10px;font-weight:700;color:var(--silver);min-width:70px;text-transform:uppercase;letter-spacing:.04em}
+.fb-val{font-size:12px;color:var(--white);font-weight:500}
+.fb-ref{font-size:10px;color:var(--silver);margin-left:auto;letter-spacing:.03em}
+
+.di{font-size:13px;color:var(--smoke);padding:3px 0 3px 14px;position:relative;line-height:1.5}
+.di::before{content:"—";position:absolute;left:0;color:var(--frost);font-size:10px;top:5px}
+.di.al{color:var(--warn);font-weight:600}
+.di.al::before{content:"⚠";left:0;font-size:10px;color:var(--warn)}
+
+/* ─── SECTION HEAD ─── */
+.sh{font-size:10px;font-weight:700;color:var(--smoke);text-transform:uppercase;letter-spacing:.1em;margin:1.2rem 0 .5rem}
 .sh:first-child{margin-top:0}
-.leg-head{display:flex;align-items:center;gap:8px;margin:1rem 0 .5rem}
-.leg-line{flex:1;height:1px;background:#e5e5ea}
-.leg-name{font-size:11px;font-weight:700;color:#8e8e93;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
-.fcard{background:#fff;border:1px solid #e5e5ea;border-radius:12px;margin-bottom:8px;overflow:hidden}
-.fcard-head{padding:10px 14px 6px}
-.fcard-route{font-size:15px;font-weight:700;color:#1c1c1e;margin-bottom:2px}
-.fcard-airline{font-size:12px;color:#6e6e73}
-.fcard-body{display:flex;gap:0;border-top:1px solid #f2f2f7}
-.fblock{flex:1;padding:8px 14px;border-right:1px solid #f2f2f7}
+
+/* ─── FLIGHT LEG HEADERS ─── */
+.leg-head{display:flex;align-items:center;gap:10px;margin:1rem 0 .5rem}
+.leg-line{flex:1;height:1px;background:var(--frost)}
+.leg-name{font-size:10px;font-weight:700;color:var(--smoke);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+
+/* ─── FLIGHT CARDS ─── */
+.fcard{background:var(--white);border:1px solid var(--frost);border-radius:10px;margin-bottom:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.fcard-head{padding:10px 13px 6px}
+.fcard-route{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.fcard-airline{font-size:11px;color:var(--smoke)}
+.fcard-body{display:flex;border-top:1px solid var(--frost)}
+.fblock{flex:1;padding:8px 13px;border-right:1px solid var(--frost)}
 .fblock:last-child{border-right:none}
-.fblock-label{font-size:10px;font-weight:600;color:#8e8e93;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
-.fblock-val{font-size:14px;font-weight:600;color:#1c1c1e}
-.fblock-sub{font-size:11px;color:#8e8e93;margin-top:1px}
-.fcard-ref{padding:6px 14px 10px;display:flex;gap:16px;flex-wrap:wrap}
-.fref-item{font-size:12px;color:#6e6e73}
-.fref-item strong{color:#1c1c1e;font-weight:600}
-.fcard-checkin{background:#e8f0fe;padding:6px 14px;font-size:12px;color:#1a56db;font-weight:600}
-.layover{text-align:center;font-size:11px;color:#8e8e93;padding:4px 0;font-style:italic}
-.car-card{background:#fff;border:1px solid #e5e5ea;border-radius:12px;margin-bottom:12px;overflow:hidden}
-.car-header{background:#1c1c1e;padding:12px 16px}
-.car-header-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:2px}
-.car-header-sub{font-size:12px;color:#a0a0a8}
-.car-conf{background:#e8f0fe;padding:6px 16px;font-size:12px;color:#1a56db;font-weight:600}
-.car-section{padding:12px 16px;border-bottom:1px solid #f2f2f7}
+.fblock-label{font-size:9px;font-weight:700;color:var(--silver);text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.fblock-val{font-size:14px;font-weight:700;color:var(--navy)}
+.fblock-sub{font-size:10px;color:var(--smoke);margin-top:1px}
+.fcard-ref{padding:6px 13px 9px;display:flex;gap:14px;flex-wrap:wrap;background:var(--ice)}
+.fref-item{font-size:11px;color:var(--smoke)}
+.fref-item strong{color:var(--charcoal);font-weight:600}
+.fcard-checkin{background:var(--navy);padding:5px 13px;font-size:11px;color:var(--white);font-weight:600;letter-spacing:.03em}
+.layover{text-align:center;font-size:10px;color:var(--silver);padding:4px 0;font-style:italic;letter-spacing:.03em}
+
+/* ─── CAR HIRE ─── */
+.car-card{background:var(--white);border:1px solid var(--frost);border-radius:10px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.car-header{background:var(--navy);padding:13px 16px}
+.car-header-title{font-size:14px;font-weight:700;color:var(--white);margin-bottom:2px;letter-spacing:.02em}
+.car-header-sub{font-size:11px;color:var(--silver)}
+.car-conf{background:var(--charcoal);padding:5px 16px;font-size:11px;color:var(--white);font-weight:600;letter-spacing:.04em}
+.car-section{padding:11px 16px;border-bottom:1px solid var(--frost)}
 .car-section:last-child{border-bottom:none}
-.car-section-title{font-size:11px;font-weight:700;color:#8e8e93;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.car-section-title{font-size:9px;font-weight:700;color:var(--smoke);text-transform:uppercase;letter-spacing:.1em;margin-bottom:7px}
 .car-row{display:flex;justify-content:space-between;align-items:flex-start;padding:4px 0}
-.car-row-label{font-size:13px;color:#6e6e73;flex:1}
-.car-row-val{font-size:13px;color:#1c1c1e;font-weight:500;text-align:right;flex:1}
-.car-alert{background:#fff7ed;border:1px solid #fed7aa;border-radius:8px;padding:8px 12px;margin-top:8px;font-size:12px;color:#9a3412;line-height:1.5}
-.car-tbc{background:#f5f5f7;border:1px dashed #c7c7cc;border-radius:12px;padding:20px;text-align:center;margin-bottom:12px}
-.car-tbc-title{font-size:15px;font-weight:700;color:#8e8e93;margin-bottom:4px}
-.car-tbc-sub{font-size:13px;color:#aeaeb2}
-.cr{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #f2f2f7}
+.car-row-label{font-size:12px;color:var(--smoke);flex:1}
+.car-row-val{font-size:12px;color:var(--charcoal);font-weight:500;text-align:right;flex:1}
+.car-alert{background:var(--warn-bg);border-left:3px solid var(--warn);padding:7px 10px;margin-top:8px;font-size:11px;color:var(--warn);line-height:1.5;border-radius:0 6px 6px 0}
+.car-tbc{background:var(--ice);border:1px dashed var(--frost);border-radius:10px;padding:20px;text-align:center;margin-bottom:12px}
+.car-tbc-title{font-size:14px;font-weight:700;color:var(--smoke);margin-bottom:4px}
+.car-tbc-sub{font-size:12px;color:var(--silver)}
+
+/* ─── CHECKLIST ─── */
+.cr{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--frost)}
 .cr:last-child{border:none}
-.cr input{width:20px;height:20px;margin-top:1px;flex-shrink:0;accent-color:#1a56db}
-.cl{font-size:14px;color:#1c1c1e;line-height:1.45;flex:1}
-.ms{display:flex;gap:13px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #f2f2f7}
+.cr input{width:18px;height:18px;margin-top:1px;flex-shrink:0;accent-color:var(--navy)}
+.cl{font-size:13px;color:var(--charcoal);line-height:1.45;flex:1}
+
+/* ─── MEDIA ─── */
+.ms{display:flex;gap:13px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--frost)}
 .ms:last-child{border:none;margin:0;padding:0}
-.sn{width:30px;height:30px;border-radius:50%;background:#e8f0fe;color:#1a56db;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.st{font-size:11px;color:#8e8e93;font-weight:500;margin-bottom:2px}
-.stitle{font-size:14px;font-weight:700;color:#1c1c1e;margin-bottom:4px}
-.sd{font-size:13px;color:#48484a;line-height:1.6}
+.sn{width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--white);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.st{font-size:10px;color:var(--silver);font-weight:600;margin-bottom:2px;text-transform:uppercase;letter-spacing:.04em}
+.stitle{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.sd{font-size:12px;color:var(--smoke);line-height:1.6}
 .br{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}
-.badge{font-size:12px;font-weight:500;padding:4px 11px;border-radius:20px;background:#fff;border:1px solid #e5e5ea;color:#48484a}
-.note{font-size:12px;color:#8e8e93;margin-top:8px;line-height:1.5}
-.banner{background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:10px 14px;margin-top:1rem;font-size:13px;color:#9a3412;line-height:1.5}
-.cc{background:#fff;border:1px solid #e5e5ea;border-radius:10px;padding:12px 14px;font-family:monospace;font-size:15px;color:#1c1c1e;margin-bottom:6px}
+.badge{font-size:11px;font-weight:600;padding:4px 11px;border-radius:20px;background:var(--navy);color:var(--white);letter-spacing:.03em}
+.note{font-size:11px;color:var(--silver);margin-top:8px;line-height:1.5}
+.banner{background:var(--navy);border-radius:8px;padding:10px 14px;margin-top:1rem;font-size:12px;color:var(--white);line-height:1.5}
+.cc{background:var(--navy);border-radius:8px;padding:12px 14px;font-family:monospace;font-size:14px;color:var(--white);margin-bottom:6px;letter-spacing:.04em}
+
+/* ─── KULHAVN FOOTER ─── */
+.khv-footer{background:var(--navy);padding:1.2rem 1.4rem;border-top:3px solid var(--gold);margin-top:1rem}
+.khv-footer-brand{font-size:11px;font-weight:700;color:var(--white);letter-spacing:.12em;text-transform:uppercase}
+.khv-footer-sub{font-size:10px;color:var(--silver);margin-top:3px;letter-spacing:.06em}
 </style>
+</head>
+<body>
+
 </head>
 <body>
 <input class="tab-radio" type="radio" name="tab" id="t1" checked>
@@ -123,9 +172,10 @@ input.day-chk:checked ~ .day-body{max-height:800px}
 <input class="tab-radio" type="radio" name="tab" id="t6">
 <div class="hub">
   <div class="hero">
-    <h1>&#128506; Europe 2026</h1>
-    <p>Norway &middot; Denmark &middot; Amsterdam &middot; Ireland</p>
-    <span class="depart">&#9992; Departs 26 May</span>
+    <div class="hero-brand">Kulhavn &nbsp;/&nbsp; EES QLD</div>
+    <h1>Europe <span>2026</span></h1>
+    <div class="hero-sub">Norway &nbsp;&middot;&nbsp; Denmark &nbsp;&middot;&nbsp; Amsterdam &nbsp;&middot;&nbsp; Ireland</div>
+    <div class="depart">&#9992;&nbsp; Departs 26 May</div>
   </div>
   <div class="tab-wrap">
     <div class="tab-bar">
@@ -614,6 +664,10 @@ input.day-chk:checked ~ .day-body{max-height:800px}
       <div class="cr"><input type="checkbox"><span class="cl">AirPods</span></div>
     </div><!-- /p6 -->
   </div><!-- /panels -->
+  <div class="khv-footer">
+    <div class="khv-footer-brand">Kulhavn &nbsp;&mdash;&nbsp; Europe 2026</div>
+    <div class="khv-footer-sub">Engineering &amp; Equipment Services QLD &nbsp;&middot;&nbsp; Built with Claude</div>
+  </div>
 </div><!-- /hub -->
 </body>
 </html>

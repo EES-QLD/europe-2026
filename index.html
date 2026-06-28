@@ -52,7 +52,7 @@ input.tab-radio{display:none}
 #t4:checked ~ .hub .panels #p4,
 #t5:checked ~ .hub .panels #p5,
 #t6:checked ~ .hub .panels #p6,
-#t7:checked ~ .hub .panels #p7{display:block}
+#t7:checked ~ .hub .panels #p7
 
 /* ─── STAT GRID ─── */
 .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1rem}
@@ -175,12 +175,13 @@ input.day-chk:checked ~ .day-body{max-height:900px}
 <input class="tab-radio" type="radio" name="tab" id="t5">
 <input class="tab-radio" type="radio" name="tab" id="t6">
 <input class="tab-radio" type="radio" name="tab" id="t7">
+
 <div class="hub">
   <div class="hero">
     <div class="hero-brand">Kulhavn &nbsp;/&nbsp; EES QLD</div>
     <h1>Europe <span>2026</span></h1>
     <div class="hero-sub">Norway &nbsp;&middot;&nbsp; Denmark &nbsp;&middot;&nbsp; Amsterdam &nbsp;&middot;&nbsp; Ireland</div>
-    <div class="depart">&#9992;&nbsp; Departs 26 May</div>
+    <div class="depart">&#10003;&nbsp; Trip complete — 26 May → 22 Jun 2026</div>
   </div>
   <div class="tab-wrap">
     <div class="tab-bar">
@@ -208,9 +209,9 @@ input.day-chk:checked ~ .day-body{max-height:900px}
         <div class="day-body"><div class="day-inner">
           <div class="flight-banner">
             <div class="fb-row"><span class="fb-label">&#10003; Check-in</span><span class="fb-val">QF1823 by 10:05 &middot; MKY T1</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; QF1823</span><span class="fb-val">MKY 10:35 &rarr; BNE 12:05</span><span class="fb-ref">F9Q758</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; QF1823</span><span class="fb-val">MKY 10:35 &rarr; BNE 12:05</span></div>
             <div class="fb-row"><span class="fb-label">&#10003; Check-in</span><span class="fb-val">SQ236 by 12:45 &middot; BNE T1</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; SQ236</span><span class="fb-val">BNE 14:45 &rarr; SIN 20:45</span><span class="fb-ref">FIX44B</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; SQ236</span><span class="fb-val">BNE 14:45 &rarr; SIN 20:45</span></div>
           </div>
           <div class="di">Layover Singapore 3h 20min</div>
           <div class="di">Wear Ariat jacket + waterproof shoes</div>
@@ -224,10 +225,10 @@ input.day-chk:checked ~ .day-body{max-height:900px}
         <label class="day-header" for="d2"><span class="day-date">27 May</span><span class="day-title">SIN &rarr; CPH &rarr; OSL &rarr; Troms&oslash;</span><span class="day-tag tf">&#9992; Flight</span><span class="chev">&#9662;</span></label>
         <div class="day-body"><div class="day-inner">
           <div class="flight-banner">
-            <div class="fb-row"><span class="fb-label">&#9992; SQ352</span><span class="fb-val">SIN 00:05 &rarr; CPH 07:10</span><span class="fb-ref">FIX44B</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; SQ2754</span><span class="fb-val">CPH 09:55 &rarr; OSL 11:05</span><span class="fb-ref">FIX44B</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; SQ352</span><span class="fb-val">SIN 00:05 &rarr; CPH 07:10</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; SQ2754</span><span class="fb-val">CPH 09:55 &rarr; OSL 11:05</span></div>
             <div class="fb-row"><span class="fb-label">&#10003; Check-in</span><span class="fb-val">SK4418 by 13:00 &middot; OSL</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; SK4418</span><span class="fb-val">OSL 13:40 &rarr; TOS 15:30</span><span class="fb-ref">YN6I4X</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; SK4418</span><span class="fb-val">OSL 13:40 &rarr; TOS 15:30</span></div>
           </div>
           <div class="di">Check in Aurora accommodation</div>
           <div class="di">Light groceries &middot; early night</div>
@@ -247,8 +248,7 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="flight-banner">
             <div class="fb-row"><span class="fb-label">&#128663; Pick up</span><span class="fb-val">Sixt &middot; Troms&oslash; Airport &middot; 09:00</span></div>
             <div class="fb-row"><span class="fb-label">&#128205; Counter</span><span class="fb-val">Arrivals Hall &middot; In Terminal</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">9730228051</span><span class="fb-ref">Booking 781062659</span></div>
-          </div>
+            </div>
           <div class="di">FULL tank immediately after pickup</div>
           <div class="di">Stop Finnsnes &mdash; fuel + groceries</div>
           <div class="di">Arrive Senja &middot; check in + relax</div>
@@ -281,7 +281,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="di">Arrive Svolv&aelig;r</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Svin&oslash;ya Rorbuer &middot; Svolv&aelig;r</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">5975159411</span><span class="fb-ref">PIN 4814</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Sun 31 May &rarr; Mon 1 Jun &middot; 1 night</span></div>
           </div>
         </div></div>
@@ -294,7 +293,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="di">Check in Ramberg</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Arctic Apartments &middot; Ramberg</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">5891901962</span><span class="fb-ref">PIN 8851</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Mon 1 Jun &rarr; Tue 2 Jun &middot; 1 night</span></div>
           </div>
         </div></div>
@@ -307,7 +305,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="di al">Check ferry evening 3 June</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Thon Hotel Nordlys &middot; Bod&oslash;</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">5090509484</span><span class="fb-ref">PIN 7740</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Wed 3 Jun &rarr; Fri 5 Jun &middot; 2 nights</span></div>
           </div>
         </div></div>
@@ -328,9 +325,8 @@ input.day-chk:checked ~ .day-body{max-height:900px}
         <div class="day-body"><div class="day-inner">
           <div class="flight-banner">
             <div class="fb-row"><span class="fb-label">&#128663; Drop off</span><span class="fb-val">Sixt &middot; Bod&oslash; Airport &middot; 09:00</span></div>
-            <div class="fb-row"><span class="fb-label">&#128205; Address</span><span class="fb-val">Olav V Gate, Bod&oslash; 8004</span></div>
             <div class="fb-row"><span class="fb-label">&#10003; Check-in</span><span class="fb-val">DY345 by 09:30 &middot; BOO</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; DY345/994</span><span class="fb-val">BOO 10:30 &rarr; BLL 16:05 (1 stop)</span><span class="fb-ref">YXUM7P</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; DY345/994</span><span class="fb-val">BOO 10:30 &rarr; BLL 16:05 (1 stop)</span></div>
           </div>
           <div class="di">Return car before heading to terminal</div>
           <div class="di">Relax &mdash; no driving phase in Denmark</div>
@@ -350,16 +346,13 @@ input.day-chk:checked ~ .day-body{max-height:900px}
         <div class="day-body"><div class="day-inner">
           <div class="flight-banner">
             <div class="fb-row"><span class="fb-label">&#10003; Check-in</span><span class="fb-val">KL1294 by 10:45 &middot; BLL</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; KL1294</span><span class="fb-val">BLL 11:45 &rarr; AMS 13:00</span><span class="fb-ref">YXXEOD</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; KL1294</span><span class="fb-val">BLL 11:45 &rarr; AMS 13:00</span></div>
           </div>
           <div class="di">Train Schiphol &rarr; Centraal</div>
           <div class="di">Walk to Hotel Luxer</div>
           <div class="di">Light walk + dinner</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Hotel Luxer &middot; Amsterdam</span></div>
-            <div class="fb-row"><span class="fb-label">&#128205; Address</span><span class="fb-val">Warmoesstraat 11, Amsterdam City Centre</span></div>
-            <div class="fb-row"><span class="fb-label">&#128222; Phone</span><span class="fb-val">+31 20 330 3205</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">8568809414888532806</span><span class="fb-ref">PIN 891762</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Tue 9 Jun &rarr; Thu 11 Jun &middot; 2 nights</span></div>
           </div>
         </div></div>
@@ -377,15 +370,13 @@ input.day-chk:checked ~ .day-body{max-height:900px}
         <div class="day-body"><div class="day-inner">
           <div class="flight-banner">
             <div class="fb-row"><span class="fb-label">&#10003; Check-in</span><span class="fb-val">EI605 by 12:20 &middot; AMS</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; EI605</span><span class="fb-val">AMS 13:20 &rarr; DUB 14:00</span><span class="fb-ref">22SF2S</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; EI605</span><span class="fb-val">AMS 13:20 &rarr; DUB 14:00</span></div>
             <div class="fb-row"><span class="fb-label">&#128663; Pick up</span><span class="fb-val">Ireland hire car &middot; 15:00 &middot; DUB</span></div>
           </div>
           <div class="di">Right-hand drive &mdash; adjust mindset</div>
           <div class="di">Drive to hotel &middot; walk city</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Maldron Hotel Smithfield &middot; Dublin</span></div>
-            <div class="fb-row"><span class="fb-label">&#128205; Address</span><span class="fb-val">Smithfield, D7 Dublin</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">5967399297</span><span class="fb-ref">PIN 1140</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Thu 11 Jun &rarr; Fri 12 Jun &middot; 1 night</span></div>
             <div class="fb-row"><span class="fb-label">&#128663; Parking</span><span class="fb-val">Garage on-site &euro;18/day &mdash; reserve ahead</span></div>
           </div>
@@ -479,8 +470,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="di">Late night: P&uacute;c Fada &mdash; Trad Rave</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">The Glendalough Hotel &middot; Laragh</span></div>
-            <div class="fb-row"><span class="fb-label">&#128222; Phone</span><span class="fb-val">+353 404 45135</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">5293087567</span><span class="fb-ref">PIN 4783</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Fri 12 Jun &rarr; Sun 14 Jun &middot; 2 nights</span></div>
           </div>
         </div></div>
@@ -511,9 +500,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="di al">Parking: drive to reception first &mdash; ask &ldquo;Is secure parking available?&rdquo; &middot; Get barrier code + bay number &middot; Photograph bay + instructions &middot; &euro;9/night &middot; First come first served &middot; If full: ask reception for free Cobh street parking options</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Commodore Hotel &middot; Cobh</span></div>
-            <div class="fb-row"><span class="fb-label">&#128205; Address</span><span class="fb-val">Westbourne Place, Cobh</span></div>
-            <div class="fb-row"><span class="fb-label">&#128222; Phone</span><span class="fb-val">+353 21 481 1277</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">5054646493</span><span class="fb-ref">PIN 0478</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Sun 14 Jun &rarr; Mon 15 Jun &middot; 1 night</span></div>
           </div>
         </div></div>
@@ -526,9 +512,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="di al">Check-in: bring passport + physical ANZ credit card + Booking.com confirmation &mdash; hotel checks ID vs booking name &middot; Do NOT rely solely on Apple Wallet</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Killarney Heights Hotel</span></div>
-            <div class="fb-row"><span class="fb-label">&#128205; Address</span><span class="fb-val">Cork Road, Killarney</span></div>
-            <div class="fb-row"><span class="fb-label">&#128222; Phone</span><span class="fb-val">+353 64 663 1158</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">5622427917</span><span class="fb-ref">PIN 3227</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Mon 15 Jun &rarr; Wed 17 Jun &middot; 2 nights</span></div>
           </div>
         </div></div>
@@ -548,9 +531,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="di">Drive to Doolin &middot; park + walk pubs</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Hotel Doolin</span></div>
-            <div class="fb-row"><span class="fb-label">&#128205; Address</span><span class="fb-val">Rivervale, Doolin</span></div>
-            <div class="fb-row"><span class="fb-label">&#128222; Phone</span><span class="fb-val">+353 65 707 4111</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">6672799540</span><span class="fb-ref">PIN 6891</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Wed 17 Jun &rarr; Thu 18 Jun &middot; 1 night</span></div>
           </div>
         </div></div>
@@ -562,9 +542,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="di">Check in &middot; taxi to city &middot; dinner + walk</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Clayton Hotel Galway</span></div>
-            <div class="fb-row"><span class="fb-label">&#128205; Address</span><span class="fb-val">Old Monivea Road, Ballybrit, Galway</span></div>
-            <div class="fb-row"><span class="fb-label">&#128222; Phone</span><span class="fb-val">+353 91 721 932</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">5175020001</span><span class="fb-ref">PIN 2823</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Thu 18 Jun &rarr; Fri 19 Jun &middot; 1 night</span></div>
           </div>
         </div></div>
@@ -578,9 +555,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="di al">TWO Clayton hotels near DUB &mdash; use Eircode K67 X3H5 &middot; Free 24hr shuttle &rarr; Terminal 1 &amp; 2 &middot; Bus Zone 16 &middot; Look for dark/charcoal Clayton bus &middot; Strategy: return car first &rarr; shuttle to hotel (avoid driving airport twice)</div>
           <div class="flight-banner" style="margin-top:8px;">
             <div class="fb-row"><span class="fb-label">&#127968; Stay</span><span class="fb-val">Clayton Hotel Dublin Airport</span></div>
-            <div class="fb-row"><span class="fb-label">&#128205; Address</span><span class="fb-val">Stockhole Lane, Swords, Cloghran</span></div>
-            <div class="fb-row"><span class="fb-label">&#128222; Phone</span><span class="fb-val">+353 1 871 1200</span></div>
-            <div class="fb-row"><span class="fb-label">&#128273; Conf</span><span class="fb-val">5701717534</span><span class="fb-ref">PIN 6478</span></div>
             <div class="fb-row"><span class="fb-label">&#128197; Check-in</span><span class="fb-val">Fri 19 Jun &rarr; Sat 20 Jun &middot; 1 night</span></div>
             <div class="fb-row"><span class="fb-label">&#9992; Shuttle</span><span class="fb-val">Confirm shuttle to terminal &mdash; 03:30 wake</span></div>
           </div>
@@ -592,20 +566,20 @@ input.day-chk:checked ~ .day-body{max-height:900px}
         <div class="day-body"><div class="day-inner">
           <div class="flight-banner">
             <div class="fb-row"><span class="fb-label">&#10003; Check-in</span><span class="fb-val">EI602 by 05:15 &middot; DUB T2</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; EI602</span><span class="fb-val">DUB 06:15 &rarr; AMS 08:55</span><span class="fb-ref">F3BSI8</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; SQ323</span><span class="fb-val">AMS 10:20 &rarr; SIN 05:30+1</span><span class="fb-ref">F3BSI8</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; EI602</span><span class="fb-val">DUB 06:15 &rarr; AMS 08:55</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; SQ323</span><span class="fb-val">AMS 10:20 &rarr; SIN 05:30+1</span></div>
           </div>
           <div class="di">Wake ~03:30 &middot; shuttle to airport</div>
-          <div class="di">Seat 44G confirmed SQ323 (Forward Zone)</div>
+          <div class="di"></div>
         </div></div>
       </div>
       <div class="day-card"><input class="day-chk" type="checkbox" id="d24">
         <label class="day-header" for="d24"><span class="day-date">21 Jun</span><span class="day-title">Singapore &rarr; Brisbane</span><span class="day-tag tf">&#9992; Flight</span><span class="chev">&#9662;</span></label>
         <div class="day-body"><div class="day-inner">
           <div class="flight-banner">
-            <div class="fb-row"><span class="fb-label">&#9992; SQ265</span><span class="fb-val">SIN 07:20 &rarr; BNE 16:55</span><span class="fb-ref">F3BSI8</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; SQ265</span><span class="fb-val">SIN 07:20 &rarr; BNE 16:55</span></div>
           </div>
-          <div class="di">Seat 42C confirmed (Forward Zone)</div>
+          <div class="di"></div>
           <div class="di">Layover Singapore 1h 50min</div>
         </div></div>
       </div>
@@ -614,7 +588,7 @@ input.day-chk:checked ~ .day-body{max-height:900px}
         <div class="day-body"><div class="day-inner">
           <div class="flight-banner">
             <div class="fb-row"><span class="fb-label">&#10003; Check-in</span><span class="fb-val">QF1826 by 12:15 &middot; BNE T D</span></div>
-            <div class="fb-row"><span class="fb-label">&#9992; QF1826</span><span class="fb-val">BNE 12:45 &rarr; MKY 14:30</span><span class="fb-ref">F9Q758</span></div>
+            <div class="fb-row"><span class="fb-label">&#9992; QF1826</span><span class="fb-val">BNE 12:45 &rarr; MKY 14:30</span></div>
           </div>
           <div class="di">Home!</div>
         </div></div>
@@ -624,29 +598,29 @@ input.day-chk:checked ~ .day-body{max-height:900px}
     <!-- FLIGHTS -->
     <div class="panel" id="p2">
       <div class="leg-head"><div class="leg-line"></div><div class="leg-name" style="color:#6e6e73;">&#127462;&#127482; Outbound &mdash; Australia to Norway</div><div class="leg-line"></div></div>
-      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 10:05 AM</div><div class="fcard-head"><div class="fcard-route">Mackay &rarr; Brisbane</div><div class="fcard-airline">Qantas &middot; QF1823 &middot; Embraer 190</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">10:35 AM</div><div class="fblock-sub">26 May &middot; MKY</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">12:05 PM</div><div class="fblock-sub">26 May &middot; BNE T D</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 30m</div><div class="fblock-sub">Non-stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>F9Q758</strong></span><span class="fref-item">Baggage <strong>23kg</strong></span></div></div>
+      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 10:05 AM</div><div class="fcard-head"><div class="fcard-route">Mackay &rarr; Brisbane</div><div class="fcard-airline">Qantas &middot; QF1823 &middot; Embraer 190</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">10:35 AM</div><div class="fblock-sub">26 May &middot; MKY</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">12:05 PM</div><div class="fblock-sub">26 May &middot; BNE T D</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 30m</div><div class="fblock-sub">Non-stop</div></div></div></div>
       <div class="layover">&#9660; Layover Brisbane &mdash; connect to international terminal</div>
-      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 12:45 PM &middot; BNE Terminal 1</div><div class="fcard-head"><div class="fcard-route">Brisbane &rarr; Singapore</div><div class="fcard-airline">Singapore Airlines &middot; SQ236 &middot; A350-900</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">2:45 PM</div><div class="fblock-sub">26 May &middot; BNE T1</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">8:45 PM</div><div class="fblock-sub">26 May &middot; SIN Changi</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">8h 00m</div><div class="fblock-sub">Non-stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>FIX44B</strong></span><span class="fref-item">Baggage <strong>30kg</strong></span></div></div>
+      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 12:45 PM &middot; BNE Terminal 1</div><div class="fcard-head"><div class="fcard-route">Brisbane &rarr; Singapore</div><div class="fcard-airline">Singapore Airlines &middot; SQ236 &middot; A350-900</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">2:45 PM</div><div class="fblock-sub">26 May &middot; BNE T1</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">8:45 PM</div><div class="fblock-sub">26 May &middot; SIN Changi</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">8h 00m</div><div class="fblock-sub">Non-stop</div></div></div></div>
       <div class="layover">&#9660; Layover Singapore Changi &mdash; 3h 20min &middot; Terminal 3</div>
-      <div class="fcard"><div class="fcard-head"><div class="fcard-route">Singapore &rarr; Copenhagen</div><div class="fcard-airline">Singapore Airlines &middot; SQ352 &middot; A350-900</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">12:05 AM</div><div class="fblock-sub">27 May &middot; SIN T3</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">7:10 AM</div><div class="fblock-sub">27 May &middot; CPH T3</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">13h 05m</div><div class="fblock-sub">Non-stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>FIX44B</strong></span></div></div>
+      <div class="fcard"><div class="fcard-head"><div class="fcard-route">Singapore &rarr; Copenhagen</div><div class="fcard-airline">Singapore Airlines &middot; SQ352 &middot; A350-900</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">12:05 AM</div><div class="fblock-sub">27 May &middot; SIN T3</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">7:10 AM</div><div class="fblock-sub">27 May &middot; CPH T3</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">13h 05m</div><div class="fblock-sub">Non-stop</div></div></div></div>
       <div class="layover">&#9660; Layover Copenhagen &mdash; 2h 45min &middot; Terminal 3</div>
-      <div class="fcard"><div class="fcard-head"><div class="fcard-route">Copenhagen &rarr; Oslo</div><div class="fcard-airline">Scandinavian Airlines &middot; SQ2754 &middot; A320neo</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">9:55 AM</div><div class="fblock-sub">27 May &middot; CPH T3</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">11:05 AM</div><div class="fblock-sub">27 May &middot; OSL</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 10m</div><div class="fblock-sub">Non-stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>FIX44B</strong></span></div></div>
+      <div class="fcard"><div class="fcard-head"><div class="fcard-route">Copenhagen &rarr; Oslo</div><div class="fcard-airline">Scandinavian Airlines &middot; SQ2754 &middot; A320neo</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">9:55 AM</div><div class="fblock-sub">27 May &middot; CPH T3</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">11:05 AM</div><div class="fblock-sub">27 May &middot; OSL</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 10m</div><div class="fblock-sub">Non-stop</div></div></div></div>
       <div class="layover">&#9660; Layover Oslo &mdash; 2h 35min</div>
-      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 13:00 &middot; OSL</div><div class="fcard-head"><div class="fcard-route">Oslo &rarr; Troms&oslash;</div><div class="fcard-airline">Scandinavian Airlines &middot; SK4418</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">1:40 PM</div><div class="fblock-sub">27 May &middot; OSL</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">3:30 PM</div><div class="fblock-sub">27 May &middot; TOS</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 50m</div><div class="fblock-sub">Non-stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>YN6I4X</strong></span><span class="fref-item">Baggage <strong>1PC</strong></span></div></div>
+      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 13:00 &middot; OSL</div><div class="fcard-head"><div class="fcard-route">Oslo &rarr; Troms&oslash;</div><div class="fcard-airline">Scandinavian Airlines &middot; SK4418</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">1:40 PM</div><div class="fblock-sub">27 May &middot; OSL</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">3:30 PM</div><div class="fblock-sub">27 May &middot; TOS</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 50m</div><div class="fblock-sub">Non-stop</div></div></div></div>
       <div class="leg-head"><div class="leg-line"></div><div class="leg-name" style="color:#1e40af;">Norway &rarr; Denmark</div><div class="leg-line"></div></div>
-      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 09:30 &middot; BOO &middot; Return Sixt car first</div><div class="fcard-head"><div class="fcard-route">Bod&oslash; &rarr; Billund</div><div class="fcard-airline">Norwegian Air Shuttle &middot; DY345/DY994 &middot; 1 stop</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">10:30 AM</div><div class="fblock-sub">5 Jun &middot; BOO</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">4:05 PM</div><div class="fblock-sub">5 Jun &middot; BLL</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">5h 35m</div><div class="fblock-sub">1 stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>YXUM7P</strong></span><span class="fref-item">Seat <strong>8C</strong></span><span class="fref-item">Baggage <strong>23kg</strong></span></div></div>
+      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 09:30 &middot; BOO &middot; Return Sixt car first</div><div class="fcard-head"><div class="fcard-route">Bod&oslash; &rarr; Billund</div><div class="fcard-airline">Norwegian Air Shuttle &middot; DY345/DY994 &middot; 1 stop</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">10:30 AM</div><div class="fblock-sub">5 Jun &middot; BOO</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">4:05 PM</div><div class="fblock-sub">5 Jun &middot; BLL</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">5h 35m</div><div class="fblock-sub">1 stop</div></div></div></div>
       <div class="leg-head"><div class="leg-line"></div><div class="leg-name" style="color:#991b1b;">Denmark &rarr; Amsterdam</div><div class="leg-line"></div></div>
-      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 10:45 AM &middot; BLL</div><div class="fcard-head"><div class="fcard-route">Billund &rarr; Amsterdam</div><div class="fcard-airline">KLM &middot; KL1294</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">11:45 AM</div><div class="fblock-sub">9 Jun &middot; BLL</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">1:00 PM</div><div class="fblock-sub">9 Jun &middot; AMS</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 15m</div><div class="fblock-sub">Direct</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>YXXEOD</strong></span></div></div>
+      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 10:45 AM &middot; BLL</div><div class="fcard-head"><div class="fcard-route">Billund &rarr; Amsterdam</div><div class="fcard-airline">KLM &middot; KL1294</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">11:45 AM</div><div class="fblock-sub">9 Jun &middot; BLL</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">1:00 PM</div><div class="fblock-sub">9 Jun &middot; AMS</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 15m</div><div class="fblock-sub">Direct</div></div></div></div>
       <div class="leg-head"><div class="leg-line"></div><div class="leg-name" style="color:#c2410c;">Amsterdam &rarr; Dublin</div><div class="leg-line"></div></div>
-      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 12:20 PM &middot; AMS Schiphol</div><div class="fcard-head"><div class="fcard-route">Amsterdam &rarr; Dublin</div><div class="fcard-airline">Aer Lingus &middot; EI605 &middot; A320</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">1:20 PM</div><div class="fblock-sub">11 Jun &middot; AMS</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">2:00 PM</div><div class="fblock-sub">11 Jun &middot; DUB</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 40m</div><div class="fblock-sub">Direct</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>22SF2S</strong></span><span class="fref-item">Baggage <strong>checked + hand included</strong></span></div></div>
+      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 12:20 PM &middot; AMS Schiphol</div><div class="fcard-head"><div class="fcard-route">Amsterdam &rarr; Dublin</div><div class="fcard-airline">Aer Lingus &middot; EI605 &middot; A320</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">1:20 PM</div><div class="fblock-sub">11 Jun &middot; AMS</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">2:00 PM</div><div class="fblock-sub">11 Jun &middot; DUB</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 40m</div><div class="fblock-sub">Direct</div></div></div></div>
       <div class="leg-head"><div class="leg-line"></div><div class="leg-name" style="color:#166534;">&#127470;&#127466; Return &mdash; Ireland to Australia</div><div class="leg-line"></div></div>
-      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 05:15 AM &middot; DUB Terminal 2</div><div class="fcard-head"><div class="fcard-route">Dublin &rarr; Amsterdam</div><div class="fcard-airline">Aer Lingus &middot; EI602 &middot; A320</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">6:15 AM</div><div class="fblock-sub">20 Jun &middot; DUB T2</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">8:55 AM</div><div class="fblock-sub">20 Jun &middot; AMS</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 40m</div><div class="fblock-sub">Non-stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>F3BSI8</strong></span></div></div>
+      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 05:15 AM &middot; DUB Terminal 2</div><div class="fcard-head"><div class="fcard-route">Dublin &rarr; Amsterdam</div><div class="fcard-airline">Aer Lingus &middot; EI602 &middot; A320</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">6:15 AM</div><div class="fblock-sub">20 Jun &middot; DUB T2</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">8:55 AM</div><div class="fblock-sub">20 Jun &middot; AMS</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 40m</div><div class="fblock-sub">Non-stop</div></div></div></div>
       <div class="layover">&#9660; Layover Amsterdam &mdash; 1h 25min</div>
-      <div class="fcard"><div class="fcard-head"><div class="fcard-route">Amsterdam &rarr; Singapore</div><div class="fcard-airline">Singapore Airlines &middot; SQ323 &middot; A350-900</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">10:20 AM</div><div class="fblock-sub">20 Jun &middot; AMS</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">5:30 AM</div><div class="fblock-sub">21 Jun &middot; SIN</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">13h 10m</div><div class="fblock-sub">Non-stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>F3BSI8</strong></span><span class="fref-item">Seat <strong>44G Forward Zone</strong></span></div></div>
+      <div class="fcard"><div class="fcard-head"><div class="fcard-route">Amsterdam &rarr; Singapore</div><div class="fcard-airline">Singapore Airlines &middot; SQ323 &middot; A350-900</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">10:20 AM</div><div class="fblock-sub">20 Jun &middot; AMS</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">5:30 AM</div><div class="fblock-sub">21 Jun &middot; SIN</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">13h 10m</div><div class="fblock-sub">Non-stop</div></div></div></div>
       <div class="layover">&#9660; Layover Singapore &mdash; 1h 50min</div>
-      <div class="fcard"><div class="fcard-head"><div class="fcard-route">Singapore &rarr; Brisbane</div><div class="fcard-airline">Singapore Airlines &middot; SQ265 &middot; A350-900</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">7:20 AM</div><div class="fblock-sub">21 Jun &middot; SIN T3</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">4:55 PM</div><div class="fblock-sub">21 Jun &middot; BNE T1</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">7h 35m</div><div class="fblock-sub">Non-stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>F3BSI8</strong></span><span class="fref-item">Seat <strong>42C Forward Zone</strong></span></div></div>
+      <div class="fcard"><div class="fcard-head"><div class="fcard-route">Singapore &rarr; Brisbane</div><div class="fcard-airline">Singapore Airlines &middot; SQ265 &middot; A350-900</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">7:20 AM</div><div class="fblock-sub">21 Jun &middot; SIN T3</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">4:55 PM</div><div class="fblock-sub">21 Jun &middot; BNE T1</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">7h 35m</div><div class="fblock-sub">Non-stop</div></div></div></div>
       <div class="leg-head"><div class="leg-line"></div><div class="leg-name" style="color:#6e6e73;">&#127462;&#127482; Domestic Return</div><div class="leg-line"></div></div>
-      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 12:15 PM &middot; BNE Terminal D</div><div class="fcard-head"><div class="fcard-route">Brisbane &rarr; Mackay</div><div class="fcard-airline">Qantas &middot; QF1826 &middot; Embraer 190</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">12:45 PM</div><div class="fblock-sub">22 Jun &middot; BNE T D</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">2:30 PM</div><div class="fblock-sub">22 Jun &middot; MKY</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 45m</div><div class="fblock-sub">Non-stop</div></div></div><div class="fcard-ref"><span class="fref-item">Ref <strong>F9Q758</strong></span></div></div>
+      <div class="fcard"><div class="fcard-checkin">&#10003; Check-in by 12:15 PM &middot; BNE Terminal D</div><div class="fcard-head"><div class="fcard-route">Brisbane &rarr; Mackay</div><div class="fcard-airline">Qantas &middot; QF1826 &middot; Embraer 190</div></div><div class="fcard-body"><div class="fblock"><div class="fblock-label">Departs</div><div class="fblock-val">12:45 PM</div><div class="fblock-sub">22 Jun &middot; BNE T D</div></div><div class="fblock"><div class="fblock-label">Arrives</div><div class="fblock-val">2:30 PM</div><div class="fblock-sub">22 Jun &middot; MKY</div></div><div class="fblock"><div class="fblock-label">Duration</div><div class="fblock-val">1h 45m</div><div class="fblock-sub">Non-stop</div></div></div></div>
     </div><!-- /p2 -->
 
     <!-- CAR HIRE -->
@@ -656,22 +630,18 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="car-header-title">&#127475;&#127476; Norway &mdash; Sixt</div>
           <div class="car-header-sub">Toyota Yaris Cross or similar SUV &middot; Automatic &middot; Unlimited mileage</div>
         </div>
-        <div class="car-conf" style="background:#dbeafe;color:#1e40af;">Confirmation: 9730228051 &middot; Booking: 781062659</div>
+        
         <div class="car-section">
           <div class="car-section-title">Pick-up</div>
           <div class="car-row"><span class="car-row-label">Date &amp; time</span><span class="car-row-val">Fri 29 May &middot; 09:00</span></div>
           <div class="car-row"><span class="car-row-label">Location</span><span class="car-row-val">Troms&oslash; Airport Langnes</span></div>
           <div class="car-row"><span class="car-row-label">Counter</span><span class="car-row-val">Arrivals Hall &middot; In Terminal</span></div>
-          <div class="car-row"><span class="car-row-label">Address</span><span class="car-row-val">Flyplassveien 31, Troms&oslash; 9016</span></div>
-          <div class="car-row"><span class="car-row-label">Phone</span><span class="car-row-val">+47 81 522 466</span></div>
-        </div>
+          </div>
         <div class="car-section">
           <div class="car-section-title">Drop-off</div>
           <div class="car-row"><span class="car-row-label">Date &amp; time</span><span class="car-row-val">Fri 5 Jun &middot; 09:00</span></div>
           <div class="car-row"><span class="car-row-label">Location</span><span class="car-row-val">Bod&oslash; Airport &middot; In Terminal</span></div>
-          <div class="car-row"><span class="car-row-label">Address</span><span class="car-row-val">Olav V Gate, Bod&oslash; 8004</span></div>
-          <div class="car-row"><span class="car-row-label">Phone</span><span class="car-row-val">+47 81 522 466</span></div>
-        </div>
+          </div>
         <div class="car-section">
           <div class="car-section-title">Included in price</div>
           <div class="car-row"><span class="car-row-label">Mileage</span><span class="car-row-val">Unlimited</span></div>
@@ -691,22 +661,18 @@ input.day-chk:checked ~ .day-body{max-height:900px}
           <div class="car-header-title">&#127470;&#127466; Ireland &mdash; Carhire / Europcar</div>
           <div class="car-header-sub">Hyundai Tucson or similar SUV &middot; Manual &middot; Unlimited mileage</div>
         </div>
-        <div class="car-conf" style="background:#dcfce7;color:#166534;">Confirmation: PTC:1348210 &middot; Booking: 742362173</div>
+        
         <div class="car-section">
           <div class="car-section-title">Pick-up</div>
           <div class="car-row"><span class="car-row-label">Date &amp; time</span><span class="car-row-val">Thu 11 Jun &middot; 15:00</span></div>
           <div class="car-row"><span class="car-row-label">Location</span><span class="car-row-val">Dublin Airport</span></div>
           <div class="car-row"><span class="car-row-label">Counter</span><span class="car-row-val">Arrivals Hall &middot; Car Rental Centre</span></div>
-          <div class="car-row"><span class="car-row-label">Address</span><span class="car-row-val">Dublin Airport, Dublin K67 A7P4</span></div>
-          <div class="car-row"><span class="car-row-label">Phone</span><span class="car-row-val">+353 61 206 088</span></div>
           <div class="car-alert">&#128652; Follow signs for &lsquo;Car Rental&rsquo; &rarr; take Europcar/Carhire shuttle bus to Car Rental Centre</div>
         </div>
         <div class="car-section">
           <div class="car-section-title">Drop-off</div>
           <div class="car-row"><span class="car-row-label">Date &amp; time</span><span class="car-row-val">Fri 19 Jun &middot; 15:00</span></div>
           <div class="car-row"><span class="car-row-label">Location</span><span class="car-row-val">Dublin Airport</span></div>
-          <div class="car-row"><span class="car-row-label">Address</span><span class="car-row-val">Dublin Airport, Dublin K67 A7P4</span></div>
-          <div class="car-row"><span class="car-row-label">Phone</span><span class="car-row-val">+353 61 206 088</span></div>
           <div class="car-alert">&#128652; Take M1 north towards Belfast &rarr; exit 2 Dublin Airport &rarr; follow Car Rental signs &rarr; park outside office &rarr; shuttle to terminal</div>
         </div>
         <div class="car-section">
@@ -803,9 +769,9 @@ input.day-chk:checked ~ .day-body{max-height:900px}
       <p class="sh">&#9992; Singapore Airlines app &mdash; action before departure</p>
       <div class="cr"><input type="checkbox"><span class="cl">Download SingaporeAir app &middot; add all SQ trips &middot; turn on notifications</span></div>
       <div class="cr"><input type="checkbox"><span class="cl">Enable auto check-in &mdash; activates automatically 48 hrs before each SQ flight</span></div>
-      <div class="cr"><input type="checkbox"><span class="cl">Add KrisFlyer number 8752757406 to all SQ bookings &mdash; unlocks complimentary in-flight WiFi</span></div>
+      <div class="cr"><input type="checkbox"><span class="cl">Add KrisFlyer number to all SQ bookings &mdash; unlocks complimentary in-flight WiFi</span></div>
       <div class="cr"><input type="checkbox"><span class="cl">Special meals &mdash; must be pre-ordered 24&ndash;56 hrs before flight if required</span></div>
-      <div class="cr"><input type="checkbox"><span class="cl">Confirm seat selections in app &mdash; SQ323 seat 44G &middot; SQ265 seat 42C</span></div>
+      <div class="cr"><input type="checkbox"><span class="cl">Confirm seat selections in app &mdash; SQ323 SQ265 seat 42C</span></div>
 
       <p class="sh">&#128241; iPhone 17 &mdash; remaining setup</p>
       <div class="cr"><input type="checkbox"><span class="cl">Install airline apps &amp; log in: Qantas &middot; Singapore Airlines &middot; SAS &middot; Norwegian &middot; KLM &middot; Aer Lingus</span></div>
@@ -929,6 +895,8 @@ input.day-chk:checked ~ .day-body{max-height:900px}
       </div>
 
     </div><!-- /p7 -->
+
+    
   </div><!-- /panels -->
   <div class="khv-footer">
     <div class="khv-footer-brand">Kulhavn &nbsp;&mdash;&nbsp; Europe 2026</div>

@@ -52,7 +52,7 @@ input.tab-radio{display:none}
 #t4:checked ~ .hub .panels #p4,
 #t5:checked ~ .hub .panels #p5,
 #t6:checked ~ .hub .panels #p6,
-#t7:checked ~ .hub .panels #p7
+#t7:checked ~ .hub .panels #p7{display:block}
 
 /* ─── STAT GRID ─── */
 .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1rem}
@@ -175,13 +175,12 @@ input.day-chk:checked ~ .day-body{max-height:900px}
 <input class="tab-radio" type="radio" name="tab" id="t5">
 <input class="tab-radio" type="radio" name="tab" id="t6">
 <input class="tab-radio" type="radio" name="tab" id="t7">
-
 <div class="hub">
   <div class="hero">
     <div class="hero-brand">Kulhavn &nbsp;/&nbsp; EES QLD</div>
     <h1>Europe <span>2026</span></h1>
     <div class="hero-sub">Norway &nbsp;&middot;&nbsp; Denmark &nbsp;&middot;&nbsp; Amsterdam &nbsp;&middot;&nbsp; Ireland</div>
-    <div class="depart">&#10003;&nbsp; Trip complete — 26 May → 22 Jun 2026</div>
+    <div class="depart">&#9992;&nbsp; Departs 26 May</div>
   </div>
   <div class="tab-wrap">
     <div class="tab-bar">
@@ -769,7 +768,7 @@ input.day-chk:checked ~ .day-body{max-height:900px}
       <div class="cr"><input type="checkbox"><span class="cl">Enable auto check-in &mdash; activates automatically 48 hrs before each SQ flight</span></div>
       <div class="cr"><input type="checkbox"><span class="cl">Add KrisFlyer number [KrisFlyer #] to all SQ bookings &mdash; unlocks complimentary in-flight WiFi</span></div>
       <div class="cr"><input type="checkbox"><span class="cl">Special meals &mdash; must be pre-ordered 24&ndash;56 hrs before flight if required</span></div>
-      <div class="cr"><input type="checkbox"><span class="cl">Confirm seat selections in app &mdash; SQ323 SQ265 seat 42C</span></div>
+      <div class="cr"><input type="checkbox"><span class="cl">Confirm seat selections in app &mdash; SQ323 seat selections</span></div>
 
       <p class="sh">&#128241; iPhone 17 &mdash; remaining setup</p>
       <div class="cr"><input type="checkbox"><span class="cl">Install airline apps &amp; log in: Qantas &middot; Singapore Airlines &middot; SAS &middot; Norwegian &middot; KLM &middot; Aer Lingus</span></div>
@@ -893,8 +892,6 @@ input.day-chk:checked ~ .day-body{max-height:900px}
       </div>
 
     </div><!-- /p7 -->
-
-    
   </div><!-- /panels -->
   <div class="khv-footer">
     <div class="khv-footer-brand">Kulhavn &nbsp;&mdash;&nbsp; Europe 2026</div>
